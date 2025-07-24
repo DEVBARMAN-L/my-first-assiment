@@ -13,6 +13,22 @@ nav{
     justify-content: space-between;
     margin:  30px 130px;
 }
+.logo{
+    color: #E95A08;
+    font-weight: 700;
+    font-size: 1.37rem;
+}
+.color{
+    color: #E95A08;
+    
+}
+.text-color{
+    color:  rgba(0, 0, 0, 0.5);
+
+}
+.banner-discription{
+    color: rgba(0, 0, 0, 0.5);
+}
 nav ul{
     display: flex;
 }
@@ -20,10 +36,61 @@ nav ul a{
     list-style: none;
     color: #8987A1;
     text-decoration: none;
-    margin-left: 100px;
+     
 }
 nav ul li{
     text-decoration: none;
     margin-right: 30px;
     list-style: none;
+}
+.banner-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.card-box{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: -30px
+   ;
+   text-align: center;
+   margin-left: auto;
+   padding: 0;
+}
+.our-image{
+    width: 250px;
+    height: 312px;
+}
+.plant-info{
+    text-align: center;
+    justify-content: center;
+    margin-top: 125px;
+}
+.plant-title{
+    font-size: 1.55rem;
+    font-weight: 700;
+}
+.span-1{
+    font-weight: 500;
+}
+.btn-primary{
+    background-color: #E95A08;
+    color: white;
+    width: 250px;
+    height: 40px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    z-index: -1;
+    margin-bottom: 60px;
+}
+.btn-primary:hover{
+    background-color: white;
+    box-shadow: 2px 1px 4px 0px #E95A08;
+    color: black;
 }
