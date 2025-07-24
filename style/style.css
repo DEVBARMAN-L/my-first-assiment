@@ -105,3 +105,26 @@ padding: 0;
     box-shadow: 2px 1px 4px 0px #E95A08;
     color: black;
 }
+.lover-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lover-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.color-1{
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.dotted{
+    text-decoration:dashed;
+}
+.shop-img{
+    width: 300px;
+    height: 400px;
+}
