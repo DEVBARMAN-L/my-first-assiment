@@ -1,0 +1,29 @@
+
+.open-sans{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:  30px 130px;
+}
+nav ul{
+    display: flex;
+}
+nav ul a{
+    list-style: none;
+    color: #8987A1;
+    text-decoration: none;
+    margin-left: 100px;
+}
+nav ul li{
+    text-decoration: none;
+    margin-right: 30px;
+    list-style: none;
+}
