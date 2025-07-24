@@ -7,6 +7,7 @@
   font-variation-settings:
     "wdth" 100;
 }
+
 nav{
     display: flex;
     align-items: center;
@@ -55,15 +56,22 @@ nav ul li{
 .card-box{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   gap: -30px
-   ;
-   text-align: center;
-   margin-left: auto;
-   padding: 0;
+  text-align: center;
+   max-width: 1200px;
+margin: 0 auto;
+padding: 0;
+}
+.card-img{
+    padding: 0px;
+    margin: 0%;
 }
 .our-image{
     width: 250px;
     height: 312px;
+}
+.plant-section{
+    margin: 0 auto;
+    padding: 0%;
 }
 .plant-info{
     text-align: center;
