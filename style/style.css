@@ -150,20 +150,45 @@ padding: 0;
 .deal-discription{
     color: #8987A1;
 }
+.deal-section{
+    display: grid;
+   grid-template-columns: repeat(1,1r);
+   align-items: center;
+   justify-content: center;
+   gap: 30px
+   ;
+}
 .div-1{
     background-image: url(../assets/deal-bloom.png);
     background-repeat: no-repeat;
-    width: 367px;
+    width: 360px;
     height: 201px;
 }
 .div-2{
     background-image: url(../assets/deal-ana.png);
     background-repeat: no-repeat;
-    width: 367px;
+    width: 360px;
     height: 201px;
 }
+.div-1, 
+.div-2{
+grid-column: 1;
+}
+.div-1,
+.div-2,
 .div-3{
-    background-image: url(../assets/deal-zabo.png);  
-    width: 600px;
-    height: 550px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.div-3{
+    background-image: url(../assets/deal-zabo.png);
+    background-repeat: no-repeat;  
+    width: 460px;
+    height: 360px;
+    grid-column: 2;
+    grid-row: span 2;
+}
+.white{
+    align-items: center;
+    justify-content: center;
 }
