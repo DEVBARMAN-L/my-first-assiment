@@ -59,6 +59,7 @@ nav ul li{
 .card-box{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
+   flex-direction: row;
   text-align: center;
    max-width: 1240px;
 margin: 0 auto;
@@ -77,6 +78,8 @@ padding: 0;
     padding: 0%;
 }
 .plant-info{
+    grid-template-columns: repeat(4, 1fr);
+   flex-direction: row;
     text-align: center;
     justify-content: center;
     margin-top: 125px;
@@ -157,6 +160,7 @@ padding: 0;
 .deal-section{
     display: grid;
    grid-template-columns: repeat(1,1r);
+   grid-template-rows: auto auto;
    align-items: center;
    justify-content: center;
    gap: 30px
@@ -187,10 +191,11 @@ grid-column: 1;
 .div-3{
     background-image: url(../assets/deal-zabo.png);
     background-repeat: no-repeat;  
-    width: 660px;
-    height: 322px;
+   width: 630px;
+    height:  250px;
     grid-column: 2;
     grid-row: span 2;
+   margin-bottom: 50%;
     
 }
 .white{
@@ -209,7 +214,29 @@ grid-column: 1;
     width: 87px;
     text-align: right; */
 }
-
+.login-section{
+    align-items: center;
+    justify-content: center;
+}
+.login-from{
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 400px;
+}
+legend{
+    color: white;
+    font-weight: 700;
+    font-size: 2.23rem;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (max-width:576px) {
     .banner-section{
@@ -221,8 +248,41 @@ grid-column: 1;
     .lover-div{
        grid-template-rows: repeat(2,2fr);
     }
-    .card-img{
-        grid-template-columns: repeat(4,2fr);
+    .plant-info{
+          grid-template-columns: repeat(4,1fr);
+    }
+    .deal-section {
+        /* মোবাইলে সব আইটেম একটি কলামে চলে আসবে */
+        grid-template-columns: 1fr; /* একটি মাত্র কলাম */
+        grid-template-rows: auto; /* সারিগুলো স্বয়ংক্রিয়ভাবে উচ্চতা নেবে */
+        gap: 15px; /* ফাঁকা স্থান কিছুটা কমানো যেতে পারে */
+        padding: 20px 15px; /* সেকশনের ভেতরের প্যাডিং কমানো */
     }
 
-}
+    .div-1,
+    .div-2,
+    .div-3 {
+        /* সব divs এখন 1 কলাম এবং 1 সারি জুড়ে থাকবে */
+        grid-column: 1; /* নির্দিষ্ট কলাম পজিশন রিসেট */
+        grid-row: auto; /* নির্দিষ্ট সারি স্প্যান রিসেট */
+        min-height: 200px; /* মোবাইলের জন্য উচ্চতা সমন্বয় */
+        width: 95%; /* মোবাইলে স্ক্রিনের অধিকাংশ চওড়া নেবে (একটু বেশি মার্জিন ছাড়া) */
+        margin: 0 auto; /* মাঝখানে আনার জন্য */
+        
+        /* মোবাইলে ভেতরের কন্টেন্টকে মাঝখানে আনার জন্য */
+        align-items: center; /* ভেতরের কন্টেন্ট (text, button) মাঝখানে আসবে */
+        text-align: center; /* ভেতরের টেক্সটকেও মাঝখানে করবে */
+    }
+
+    /* মোবাইলে টেক্সট এবং অন্যান্য এলিমেন্টের ফন্ট সাইজ বা প্যাডিং কমানো যেতে পারে */
+    .white {
+        font-size: 1.2em;
+    }
+    .p-tag {
+        font-size: 0.9em;
+    }
+   
+     }
+     
+
+    
