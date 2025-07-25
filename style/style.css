@@ -163,6 +163,7 @@ padding: 0;
     background-repeat: no-repeat;
     width: 360px;
     height: 201px;
+    text-align: center;
 }
 .div-2{
     background-image: url(../assets/deal-ana.png);
@@ -183,12 +184,23 @@ grid-column: 1;
 .div-3{
     background-image: url(../assets/deal-zabo.png);
     background-repeat: no-repeat;  
-    width: 460px;
-    height: 360px;
+    width: 660px;
+    height: 322px;
     grid-column: 2;
     grid-row: span 2;
 }
 .white{
-    align-items: center;
+    text-align: center;
     justify-content: center;
+    margin-top: 20%;
+    color: white;
+  font-size: 1.70rem;
+}
+.p-tag{
+    color: white;
+   align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px white
+    ;
+    width: 90px;
 }
