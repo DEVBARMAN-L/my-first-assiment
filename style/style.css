@@ -139,6 +139,10 @@ padding: 0;
     width: 330px;
     height: 400px;
 }
+.letest-deal{
+    align-items: center;
+    justify-content: center;
+}
 .deal{
     text-align: center;
     justify-content: center;
@@ -163,7 +167,6 @@ padding: 0;
     background-repeat: no-repeat;
     width: 360px;
     height: 201px;
-    text-align: center;
 }
 .div-2{
     background-image: url(../assets/deal-ana.png);
@@ -188,6 +191,7 @@ grid-column: 1;
     height: 322px;
     grid-column: 2;
     grid-row: span 2;
+    
 }
 .white{
     text-align: center;
@@ -198,9 +202,27 @@ grid-column: 1;
 }
 .p-tag{
     color: white;
-   align-items: center;
-    justify-content: center;
-    border-bottom: solid 1px white
+  text-align: center;
+    font-size: 1.23rem;
+    /* border-bottom: solid 1px white
     ;
-    width: 90px;
+    width: 87px;
+    text-align: right; */
+}
+
+
+@media screen and (max-width:576px) {
+    .banner-section{
+        flex-direction: column-reverse;
+    }
+    nav{
+      gap: 50%;
+    }
+    .lover-div{
+       grid-template-rows: repeat(2,2fr);
+    }
+    .card-img{
+        grid-template-columns: repeat(4,2fr);
+    }
+
 }
