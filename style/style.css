@@ -260,8 +260,11 @@ fieldset input[type="email"]{
 }
 footer{
     display: flex;
+    background-color: white;
 }
-
+.ul-flex{
+    display: inline;
+}
 
 @media screen and (max-width:576px) {
     .banner-section{
