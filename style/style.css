@@ -235,91 +235,74 @@ grid-column: 1;
     text-align: right; */
 }
  .login-section {
-    background-image: url(../assets/news-letter-bg.png); /* নিশ্চিত করুন সঠিক পাথ */
-    background-size: cover; /* ছবিকে পুরো এরিয়ায় কভার করার জন্য */
+    background-image: url(../assets/news-letter-bg.png); 
+    background-size: cover;  
     background-position: center;
     background-repeat: no-repeat;
-    display: flex; /* কন্টেন্টকে মাঝখানে আনার জন্য ফ্লেক্সবক্স ব্যবহার করুন */
-    justify-content: center; /* অনুভূমিকভাবে মাঝখানে */
-    align-items: center; /* উল্লম্বভাবে মাঝখানে */
-    height: 400px; /* আপনার ফিগমা অনুযায়ী উচ্চতা দিন */
+    display: flex; 
+    justify-content: center;  
+    align-items: center;  
+    height: 400px;  
     margin-top: 100px;
-    color: white; /* টেক্সট কালার সাদা করুন */
-    text-align: center; /* টেক্সটকে মাঝখানে আনার জন্য */
+    color: white;  
+    text-align: center;  
 }
 
 .newsletter-content {
-    /* এই div টি ফর্ম কন্টেন্টকে ধরে রাখবে */
+   
     display: flex;
-    flex-direction: column; /* এলিমেন্টগুলোকে উল্লম্বভাবে সাজানোর জন্য */
-    align-items: center; /* অনুভূমিকভাবে মাঝখানে */
-    gap: 20px; /* এলিমেন্টগুলোর মধ্যে ব্যবধান */
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px; 
 }
 
 .newsletter-content h2 {
     color: white;
-    font-size: 2.3rem; /* আপনার ফিগমা অনুযায়ী ফন্ট সাইজ */
-    margin-bottom: 0; /* ডিফল্ট মার্জিন সরান */
+    font-size: 2.3rem;  
+    margin-bottom: 0;  
 }
 
 .input-group {
-    display: flex; /* ইমেইল ইনপুট এবং বাটনকে পাশাপাশি রাখার জন্য */
-    gap: 10px; /* ইনপুট এবং বাটনের মধ্যে ব্যবধান */
-    width: fit-content; /* কন্টেন্টের আকারের সমান প্রস্থ */
-    /* width: 700px; */ /* যদি নির্দিষ্ট প্রস্থ দরকার হয় */
-    /* max-width: 90%; */ /* রেসপনসিভনেসের জন্য */
+    display: flex;  
+    gap: 10px;  
+    width: fit-content;  
+     
 }
 
 .input-group input[type="email"] {
-    height: 50px; /* আপনার ফিগমা অনুযায়ী উচ্চতা */
-    width: 450px; /* আপনার ফিগমা অনুযায়ী প্রস্থ, প্রয়োজনে পরিবর্তন করুন */
+    height: 50px;  
+    width: 450px;  
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     background-color: white;
     font-size: 1rem;
-    color: #333; /* প্লেসহোল্ডার টেক্সট কালার */
+    color: #333;  
 }
 
 .input-group input[type="email"]::placeholder {
     color: #888;
 }
 
-.input-group .btn-primary {
-    height: 50px; /* ইনপুট বক্সের সমান উচ্চতা */
-    padding: 0 30px; /* প্যাডিং */
+.btn-primary{
+    height: 50px;  
+    padding: 0 30px;   
     border: none;
     border-radius: 5px;
-    background-color: #ff6a28; /* কমলা কালার ফিগমা থেকে */
+    background-color: #ff6a28;  
     color: white;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* হোভার ইফেক্ট */
+    transition: background-color 0.3s ease;  
 }
 
-.input-group .btn-primary:hover {
-    background-color: #e55c20; /* হোভার কালার */
+.btn-primary:hover{
+    background-color: #e55c20;  
 }
 
-/* রেসপনসিভ ডিজাইনের জন্য মিডিয়া কোয়েরি (ছোট স্ক্রিনের জন্য) */
-@media (max-width: 768px) {
-    .login-section {
-        height: 300px;
-    }
-    .newsletter-content h2 {
-        font-size: 1.8rem;
-    }
-    .input-group {
-        flex-direction: column; /* ছোট স্ক্রিনে উল্লম্বভাবে সাজান */
-        align-items: center;
-        width: 90%; /* ছোট স্ক্রিনে প্রস্থ বাড়ান */
-    }
-    .input-group input[type="email"],
-    .input-group .btn-primary {
-        width: 100%; /* ছোট স্ক্রিনে পুরো প্রস্থ নিন */
-    }
-}
+ 
+
 footer{
     display: flex;
     flex-wrap: wrap;
@@ -349,20 +332,21 @@ footer{
     color: #8987A1;
 }
 .btn-primary-2{
-    background-color: #E95A08;
+    background-color: #e55c20;
     color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    width: 100%;
+    width:100%;
     height: 50px;
     cursor: pointer;
     transition-duration: 0.3s;
-    align-items: center;
+    font-weight:bold;
+    font-size: 1rem;
+
 }
 .btn-primary-2:hover{
-    color: black;
     background-color: white;
-    box-shadow: 1px 1px 1px 2px black;
+    color: black;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px
 }
 
 @media screen and (max-width:576px) {
@@ -427,11 +411,7 @@ footer{
     .p-tag {
         font-size: 0.9em;
     }
-    /* footer,
-    .ul-flex,
-    .ul-2 {
-         flex-wrap: wrap-reverse;
-     } */
+    
       
      footer {
     flex-direction: column;
@@ -443,5 +423,23 @@ footer{
  
      }
      
+
+     @media (max-width: 768px) {
+    .login-section {
+        height: 300px;
+    }
+    .newsletter-content h2 {
+        font-size: 1.8rem;
+    }
+    .input-group {
+        flex-direction: column;  
+        align-items: center;
+        width: 90%;  
+    }
+    .input-group input[type="email"],
+    .input-group .btn-primary {
+        width: 100%;  
+    }
+}
 
     
