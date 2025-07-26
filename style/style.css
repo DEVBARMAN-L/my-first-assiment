@@ -209,9 +209,9 @@ grid-column: 1;
     background-image: url(../assets/deal-zabo.png);
     background-repeat: no-repeat;  
    width: 630px;
-    height:  250px;
+    height:  350px;
     grid-column: 2;
-    grid-row: span 2;
+    grid-row:1/ span 2;
    margin: 0 auto;    
 }
 .white{
@@ -243,6 +243,21 @@ grid-column: 1;
      justify-content: center;
      align-items: center;
 }
+legend{
+    text-align: center;
+    justify-items: center;
+}
+fieldset input[type="email"]{
+     height: 64px;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 400px;
+    /* padding: 10px 20px; */
+    margin-bottom: 24px;
+    border: none;
+  
+}
 
 
 @media screen and (max-width:576px) {
@@ -251,7 +266,7 @@ grid-column: 1;
         width: 100%;
     }
     nav{
-      gap: 90%;
+      justify-content: space-around;
     }
     .card-box{
         grid-template-rows: repeat(2,2fr);
@@ -285,7 +300,10 @@ grid-column: 1;
         align-items: center;  
         text-align: center;  
     }
-
+    .div-3{
+          width: 360px;
+    height: 201px;
+    }
     .white {
         font-size: 1.2em;
     }
