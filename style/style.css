@@ -284,7 +284,7 @@ grid-column: 1;
     color: #888;
 }
 
-.btn-primary{
+.btn-primary-3{
     height: 50px;  
     padding: 0 30px;   
     border: none;
@@ -294,11 +294,13 @@ grid-column: 1;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;  
+    transition: 0.3s;  
 }
 
-.btn-primary:hover{
-    background-color: #e55c20;  
+.btn-primary-3:hover{
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px blue;
+    color: #000; 
 }
 
  
@@ -386,7 +388,7 @@ footer{
         gap: 15px;  
         padding: 20px 15px;  
     }
-
+  
     .div-1,
     .div-2,
     .div-3 {
@@ -395,10 +397,11 @@ footer{
         grid-row: auto;  
         min-height: 200px;  
         width: 95%;   
-        
-         justify-content: center;
+        justify-content: center;
         align-items: center;  
         text-align: center;  
+              width: 400px;
+    height: 201px;
     }
     .div-3{
           width: 400px;
