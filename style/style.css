@@ -248,7 +248,8 @@ grid-column: 1;
      align-items: center;
 }
 form fieldset input[type="email"], form fieldset input[type="button"]{
-    margin-left: 100px;
+    display: flex;
+    margin-left: 45%;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -260,15 +261,16 @@ legend{
     justify-items: center;
 }
 fieldset input[type="email"]{
+
      height: 64px;
     border-radius: 5px;
     background-color: white;
-    display: block;
-    width: 400px;
+    display: flex;
+    width: 600px;
+    height: 50px;
     /* padding: 10px 20px; */
     margin-bottom: 24px;
     border: none;
-   text-align: left;
 }
 footer{
     display: flex;
@@ -307,6 +309,7 @@ footer{
     height: 50px;
     cursor: pointer;
     transition-duration: 0.3s;
+    display: flex;
 }
 .btn-primary-2:hover{
     color: black;
