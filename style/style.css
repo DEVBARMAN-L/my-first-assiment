@@ -400,8 +400,7 @@ footer{
         justify-content: center;
         align-items: center;  
         text-align: center;  
-              width: 400px;
-    height: 201px;
+   
     }
     .div-3{
           width: 400px;
@@ -417,10 +416,49 @@ footer{
     
       
      footer {
-    flex-direction: column;
-    align-items: flex-start;
-    flex-direction: column-reverse;
-  }
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Allow height to adjust based on content */
+        width: 100%; /* Take full width of the screen */
+        padding: 20px 0; /* Add some vertical padding */
+        align-items: flex-start; /* Align items to the start (left) */
+        justify-content: flex-start; /* Justify content to the start */
+    }
+
+    .footer-section,
+    .ul-flex,
+    .ul-2,
+    .icon-div {
+        width: 100%; /* Make each section take full width */
+        text-align: left; /* Align text within sections to the left */
+        margin-bottom: 20px; /* Add space between sections */
+        padding-left: 20px; /* Add some left padding to align with the design */
+    }
+
+    .footer-section {
+        margin-top: 20px; /* Add some space at the top */
+    }
+
+    .footer-logo {
+        text-align: left; /* Ensure logo is left-aligned */
+    }
+
+    .footer-section p {
+        text-align: left; /* Ensure paragraph text is left-aligned */
+    }
+
+    .icon-div {
+        justify-content: flex-start; /* Align icons to the left */
+        gap: 15px; /* Adjust gap for smaller screens if needed */
+        margin-bottom: 0; /* No margin at the bottom of the last section */
+    }
+
+    /* Adjust specific elements if needed to match the design in the image */
+    .ul-flex ul,
+    .ul-2 ul {
+        display: flex;
+        flex-direction: column; /* Stack list items vertically */
+        gap: 10px; /* Adjust gap between list items */
+    }
  
 
  
