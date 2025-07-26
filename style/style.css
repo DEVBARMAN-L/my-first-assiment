@@ -267,8 +267,22 @@ footer{
     width: 1440px;
     height: 320px;
 }
-.ul-flex{
-    display: inline;
+.footer-logo{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.icon-div{
+    display: flex;
+    gap: 30px
+    ;
+}
+.ul-flex ul{
+ color: #8987A1;
+  gap: 50px
+  ;
+}
+.ul-2{
+    color: #8987A1;
 }
 
 @media screen and (max-width:576px) {
@@ -320,6 +334,9 @@ footer{
     }
     .p-tag {
         font-size: 0.9em;
+    }
+    footer{
+         
     }
    
      }
