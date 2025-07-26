@@ -261,6 +261,11 @@ fieldset input[type="email"]{
 footer{
     display: flex;
     background-color: white;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 1440px;
+    height: 320px;
 }
 .ul-flex{
     display: inline;
