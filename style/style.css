@@ -248,10 +248,14 @@ grid-column: 1;
      align-items: center;
 }
 form fieldset input[type="email"], form fieldset input[type="button"]{
+    margin-left: 100px;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 legend{
+    color: white;
+    font-size: 2.3rem;
     text-align: center;
     justify-items: center;
 }
@@ -316,7 +320,8 @@ footer{
         width: 100%;
     }
     nav{
-      padding-right: 50%;
+      gap: 90%
+      ;
     }
    .card-box {
         flex-direction: row;  
