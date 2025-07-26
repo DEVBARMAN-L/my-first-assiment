@@ -258,6 +258,9 @@ fieldset input[type="email"]{
     border: none;
   
 }
+footer{
+    display: flex;
+}
 
 
 @media screen and (max-width:576px) {
