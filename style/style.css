@@ -57,9 +57,12 @@ nav ul li{
     font-weight: 700;
 }
 .card-box{
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   flex-direction: row;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px
+   ;
+   /* grid-template-columns: repeat(4, 1fr);
+   flex-direction: row; */
   text-align: center;
    max-width: 1240px;
 margin: 0 auto;
@@ -245,6 +248,11 @@ input{
     nav{
       gap: 50%;
     }
+    .card-box{
+        flex-direction: row;
+          grid-template-columns: repeat(4,1fr);
+          align-items: center;
+    }
     .lover-div{
        grid-template-rows: repeat(2,2fr);
     }
@@ -252,26 +260,25 @@ input{
           grid-template-columns: repeat(4,1fr);
     }
     .deal-section {
-        /* মোবাইলে সব আইটেম একটি কলামে চলে আসবে */
-        grid-template-columns: 1fr; /* একটি মাত্র কলাম */
-        grid-template-rows: auto; /* সারিগুলো স্বয়ংক্রিয়ভাবে উচ্চতা নেবে */
-        gap: 15px; /* ফাঁকা স্থান কিছুটা কমানো যেতে পারে */
-        padding: 20px 15px; /* সেকশনের ভেতরের প্যাডিং কমানো */
+         
+        grid-template-columns: 1fr;  
+        grid-template-rows: auto;  
+        gap: 15px;  
+        padding: 20px 15px;  
     }
 
     .div-1,
     .div-2,
     .div-3 {
-        /* সব divs এখন 1 কলাম এবং 1 সারি জুড়ে থাকবে */
-        grid-column: 1; /* নির্দিষ্ট কলাম পজিশন রিসেট */
-        grid-row: auto; /* নির্দিষ্ট সারি স্প্যান রিসেট */
-        min-height: 200px; /* মোবাইলের জন্য উচ্চতা সমন্বয় */
-        width: 95%; /* মোবাইলে স্ক্রিনের অধিকাংশ চওড়া নেবে (একটু বেশি মার্জিন ছাড়া) */
-        margin: 0 auto; /* মাঝখানে আনার জন্য */
+  
+        grid-column: 1;  
+        grid-row: auto;  
+        min-height: 200px;  
+        width: 95%;   
         
         /* মোবাইলে ভেতরের কন্টেন্টকে মাঝখানে আনার জন্য */
-        align-items: center; /* ভেতরের কন্টেন্ট (text, button) মাঝখানে আসবে */
-        text-align: center; /* ভেতরের টেক্সটকেও মাঝখানে করবে */
+        align-items: center;  
+        text-align: center;  
     }
 
     /* মোবাইলে টেক্সট এবং অন্যান্য এলিমেন্টের ফন্ট সাইজ বা প্যাডিং কমানো যেতে পারে */
