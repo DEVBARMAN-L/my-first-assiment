@@ -290,6 +290,21 @@ footer{
 .ul-2{
     color: #8987A1;
 }
+.btn-primary-2{
+    background-color: #E95A08;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.btn-primary-2:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 1px 2px black;
+}
 
 @media screen and (max-width:576px) {
     .banner-section{
@@ -299,17 +314,27 @@ footer{
     nav{
       padding-right: 50%;
     }
-    .card-box{
-        grid-template-rows: repeat(2,2fr);
-         grid-template-columns: repeat(2,1fr);
-          align-items: center;
+   .card-box {
+        flex-direction: row;  
+        justify-content: center;  
+        gap: 10px;  
+        padding: 0 10px;  
+    }
+
+    .card-img {
+        width: 48%;  
+        max-width: unset;  
+        margin: 0;  
+    }
+
+    .our-image {
+        width: 100%; 
+        height: auto;  
     }
     .lover-div{
        grid-template-rows: repeat(2,2fr);
     }
-    .plant-info{
-          grid-template-columns: repeat(4,1fr);
-    }
+     
     .deal-section {
          
         grid-template-columns: 1fr;  
@@ -327,12 +352,12 @@ footer{
         min-height: 200px;  
         width: 95%;   
         
-         
+         justify-content: center;
         align-items: center;  
         text-align: center;  
     }
     .div-3{
-          width: 360px;
+          width: 400px;
     height: 201px;
     align-items: baseline;
     }
